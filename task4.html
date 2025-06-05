@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="input">start number:</label>
+    <input type="number" id="input" placeholder="Enter the number"> <br><br>
+
+    <label for="end">End number:</label>
+    <input type="number" id="end" placeholder="Enter the number"><br><br>
+
+    <button onclick=" myFunction1()"> Enter</button>
+
+
+</body>
+<script>
+
+    function myFunction1() {
+
+        const button = document.getElementById("input").value
+        const buttons = document.getElementById("end").value
+
+        const number = Number(button)
+        const value = Number(buttons)
+        const even = []
+        const odd = []
+
+
+        for (i = number; i <= value; i++) {
+
+            // console.log(i)
+            if (i % 2 === 0) {
+                even.push(i)
+            }
+            else {
+                odd.push(i)
+            }
+        }
+
+        console.log('even :', even)
+        console.log('odd :', odd)
+
+    }
+
+
+
+</script>
+
+
+
+
+</html>
